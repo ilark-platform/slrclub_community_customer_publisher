@@ -1,0 +1,1 @@
+# slrclub_community_customer_publisher
