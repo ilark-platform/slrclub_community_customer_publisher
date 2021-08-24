@@ -36,7 +36,8 @@ function td (content) {
     return td
 }
 
-htmlFiles.forEach((item,idx) => {
+htmlFiles.forEach(item => {
+    console.log(item[0])
     let itemInfo = item[0]
     const tr = document.createElement('tr')
 
