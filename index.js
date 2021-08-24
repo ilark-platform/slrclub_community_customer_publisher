@@ -1,10 +1,7 @@
-// const fs = require('fs')
-// const jsdom = require('jsdom')
-// const { JSDOM } = jsdom
-// const dayjs = require('dayjs')
-import dayjs from 'dayjs'
-import fs from 'fs'
-import { JSDOM } from 'jsdom'
+const fs = require('fs')
+const jsdom = require('jsdom')
+const { JSDOM } = jsdom
+const dayjs = require('dayjs')
 const publishDir = './html/publish/'
 const menuDir = fs.readdirSync(publishDir)
 const htmlFiles = []
