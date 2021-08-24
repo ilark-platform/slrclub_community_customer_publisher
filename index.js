@@ -36,26 +36,26 @@ function td (content) {
     return td
 }
 
-htmlFiles.forEach(item => {
-    console.log(item[0])
-    let itemInfo = item[0]
-    const tr = document.createElement('tr')
+htmlFiles.forEach(menu => {
+    menu.forEach(itemInfo => {
+        const tr = document.createElement('tr')
 
-    const filename = td()
-    const anchor = document.createElement('a')
-    anchor.innerHTML = itemInfo.fileName
-    anchor.setAttribute('href', `${itemInfo.dir}${itemInfo.fileName}`)
-    filename.appendChild(anchor)
+        const filename = td()
+        const anchor = document.createElement('a')
+        anchor.innerHTML = itemInfo.fileName
+        anchor.setAttribute('href', `${itemInfo.dir}${itemInfo.fileName}`)
+        filename.appendChild(anchor)
 
-    const format = 'YYYY/MM/DD hh:mm'
+        const format = 'YYYY/MM/DD hh:mm'
 
-    tr.appendChild(td(itemInfo.menuDir))
-    tr.appendChild(filename)
-    tr.appendChild(td( dayjs(itemInfo.ctime).format(format) ))
-    tr.appendChild(td( dayjs(itemInfo.mtime).format(format) ))
-    tr.appendChild(td( dayjs(itemInfo.birthtime).format(format) ))
+        tr.appendChild(td(itemInfo.menuDir))
+        tr.appendChild(filename)
+        tr.appendChild(td( dayjs(itemInfo.ctime).format(format) ))
+        tr.appendChild(td( dayjs(itemInfo.mtime).format(format) ))
+        tr.appendChild(td( dayjs(itemInfo.birthtime).format(format) ))
 
-    tbody.appendChild(tr)
+        tbody.appendChild(tr)
+    })
 })
 
 
