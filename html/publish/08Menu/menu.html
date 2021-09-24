@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SLRclub</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=no">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-3.4.1.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="wrap">
+		<nav>
+			<ul class="fnb">
+				<li><a href="#">최신</a></li>
+				<li><a href="#">검색</a></li>
+				<li><a href="#">메뉴</a></li>
+				<li><a href="#">계정</a></li>
+				<li><a href="#">알림<spnaa class="ico-new"></spnaa></a></li>
+			</ul>
+		</nav>
+        <!--*****헤더영역******-->
+        <header id="header" class="trans">
+            <div class="hd__menu">
+                <h2 class="hd__title">
+                    메뉴
+                </h2>
+                <div class="hd__btn">
+                    <div class="btn-back">
+                        <a href="#"><span class="hidden-text">이전 페이지</span></a>
+                    </div>
+                </div>
+                <div class="hd__btn">
+                    <div class="btn-close">
+                        <a href="#"><span class="hidden-text">닫기</span></a>
+                    </div>
+                </div>
+            </div>
+            <!--상단 tab menu-->
+            <div class="list__tab__wrap">
+                <ul class="list__tab">
+                    <li class="current">즐겨찾기</li>
+                    <li class=""><a href="#">자유게시판</a></li>
+                    <li class=""><a href="#">커뮤니티</a></li>
+                    <li class=""><a href="#">회원장터</a></li>
+                    <li class=""><a href="#">포럼</a></li>
+                </ul>
+            </div>
+        </header>
+        <!--*****본문영역******-->
+        <div id="contents">
+            <div class="menu__wrap">
+                <div class="container">
+                    <h2 class="titTypeA"><a class="btn js-click-modal">즐겨찾는 메뉴</a></h2>
+                    <!--메뉴리스트-->
+                    <div class="menu__box">
+                        <h2 class="titTypeA">커뮤니티</h2>
+                        <!-- 1depth 메뉴일 경우 : class="noswitch" -->
+                        <div class="menu--title">
+                            <a href="#"><strong>자유게시판</strong><span>살아가는 이야기</span><div class="noswitch"></div></a>
+                        </div>
+						<div class="menu--title">
+                            <a href="#"><strong>성인게시판</strong><span>성인들의 살아가는 이야기</span><div class="noswitch"></div></a>
+                        </div>
+						<div class="menu--title">
+                            <a href="#"><strong>정치게시판</strong><span>살아가는 이야기</span><div class="noswitch"></div></a>
+                        </div>
+						<div class="menu--title">
+                            <a href="#"><strong>SLR 회원랭킹</strong><span>오늘의 사진 / 포럼 / 커뮤니티 순위</span><div class="noswitch"></div></a>
+                        </div>
+						<div class="list__banner">
+							<img src="images/dummy-banner01.png">
+						</div>
+
+						<h2 class="titTypeA">포럼</h2>
+						<div class="menu--title">
+                            <a href="#">By Digital camera<div class="noswitch"></div></a>
+                        </div>
+                        <!-- 2depth 메뉴일 경우 -->
+                        <div class="collapse__wrap">
+                            <div class="collapse--box switch">
+                                <div class="menu--title">By Lens</div>
+                            </div>
+                            <div class="collapse--expand">
+                                <a href="#" class="menu--sub">Sony / Minolta</a>
+								<a href="#" class="menu--sub">Sony / Minolta</a>
+								<a href="#" class="menu--sub">Sony / Minolta</a>
+								<a href="#" class="menu--sub">Sony / Minolta</a>
+                            </div>
+                        </div>
+                        <div class="menu--title">
+                            <a href="#">By Digital camera<div class="noswitch"></div></a>
+                        </div>
+                        <!-- 2depth 메뉴일 경우 -->
+                        <div class="collapse__wrap">
+                            <div class="collapse--box switch">
+                                <div class="menu--title">By Lens</div>
+                            </div>
+                            <div class="collapse--expand">
+                                <a href="#" class="menu--sub">Sony / Minolta</a>
+								<a href="#" class="menu--sub">Sony / Minolta</a>
+								<a href="#" class="menu--sub">Sony / Minolta</a>
+								<a href="#" class="menu--sub">Sony / Minolta</a>
+                            </div>
+                        </div>
+						<div class="list__banner">
+							<img src="images/dummy-banner01.png">
+						</div>
+
+                        <h2 class="titTypeA">갤러리</h2>
+                        <!-- 1depth 메뉴일 경우 : class="noswitch" -->
+                        <div class="menu--title">
+                            <a href="#"><strong>오늘의 사진</strong><span>SLRCLUB “오늘의 사진”에 선정된 작품 갤러리</span><div class="noswitch"></div></a>
+                        </div>
+						<div class="menu--title">
+                            <a href="#"><strong>작품 갤러리</strong><span></strong>심혈을 기울여 찍은 작품을 공유하는 프로/아마추어의 갤러리</span><div class="noswitch"></div></a>
+                        </div>
+						<div class="menu--title">
+                            <a href="#"><strong>주제 갤러리</strong><span>주제에 맞는 사진을 자유롭게 올리는 갤러리</span><div class="noswitch"></div></a>
+                        </div>
+						<div class="menu--title">
+                            <a href="#"><strong>습작 갤러리</strong><span>조언 / 토론 / 비평을 통해 사진 스킬을 레벨 업</span><div class="noswitch"></div></a>
+                        </div>
+						<div class="list__banner">
+							<img src="images/dummy-banner01.png">
+						</div>
+
+                    </div>
+                </div>
+                
+            </div>
+            <div id="TopBtn">
+				<button class="btn-totop" onclick="topFunction()" style="bottom:55px"></button>
+				<button class="btn-totop" onclick="topFunction()"></button>
+			</div>
+        
+        </div>
+    </div>
+ 
+
+
+<script src="js/common.js" type="text/javascript"></script>
+
+</body>
+</html>
