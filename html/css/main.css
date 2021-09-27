@@ -5,7 +5,8 @@ nav ul li:first-child>a{background: url(../images/ico-menu-new.svg) center no-re
 nav ul li:nth-child(2)>a{background: url(../images/ico-menu-search.svg) center no-repeat;}
 nav ul li:nth-child(3)>a{background: linear-gradient(140deg, #2E91E1, #0069BE), url(../images/ico-menu-user.svg) center no-repeat;background-color:;border-radius: 100%;width:43px;margin:auto}
 nav ul li:nth-child(4)>a{background: url(../images/ico-menu-user.svg) center no-repeat;}
-nav ul li:nth-child(5)>a{background: url(../images/ico-bell.svg) center no-repeat;background-size: 24px;}
+nav ul li:nth-child(5)>a{background: url(../images/ico-bell.svg) center no-repeat;background-size: 24px;position: relative;}
+nav ul li:nth-child(3)>a:before{content: '+';font-size:44px;line-height: 48px;color: #fff;font-weight: 200;}
 
 
 
@@ -41,7 +42,7 @@ nav ul li:nth-child(5)>a{background: url(../images/ico-bell.svg) center no-repea
 .list__content--info > span:after{content: '';border-right: 1px solid var(--lightline);padding-right:6px;margin-right: 6px;}
 .list__content--info > span:last-child:after{padding:0;margin:0;border:0}
 .list__info--recomm {background: url(../images/ico-heart.svg) 0 center no-repeat; background-size: 16px;padding-left:20px; }
-.list__info--reply {background: url(../images/ico-balloon.svg) 0 center no-repeat; background-size: 15px;padding-left:20px; }
+.list__info--reply {background: url(../images/ico-balloon.svg) 0 center no-repeat; background-size: 14px;padding-left:18px; }
 .moreviewBtn{display: inline-block;width:100%;text-align: center;padding:0px 0 10px; }
 .moreviewBtn::before{content: '';display: inline-block;width:20px;height: 20px; background: url(../images/ico-plus.svg) 0 bottom no-repeat;opacity: .6; background-size: 13px;}
 .list__banner>img{width:100%;background-size: contain; padding:30px 0px;border-radius: var(--border-radius);}
@@ -97,6 +98,8 @@ li.current {
 .menu--sub:before{content: '';border-radius: 100%;background:#ddd;width:3px;height:3px;display: inline-block; vertical-align: middle; margin-right: 8px;}
 .menu__box>.titTypeA{margin:10px 0 8px}
 .switch-active .menu--title{border:0}
+.menu__box.container .menu--sub:before{content: none;}
+
 
 /** 아코디언**/
 .noswitch{background: url(../images/ico-arrow-left.svg) right 10px top 50% no-repeat;background-size: 8px;transform: rotate( 180deg );width: 30px;height: 20px;display: inline-block;float: right;opacity: .3;}
@@ -147,5 +150,5 @@ li.current {
 .custom-radio .radio-checkmark:after{left:4px;top:4px;width:12px;height:12px;background: var(--primary);border-radius: 20px;}
 
 #hr{height: 5px;width:100%;margin:20px 0;background:var(--line)}
-.ico-new{overflow: hidden;position: absolute; top: -3px;right: -8px;width: 6px;height: 6px;text-indent: 9em;border-radius: 50%;background: #ef2b2a;}
+.ico-new{overflow: hidden;position: absolute; top: 5px;right: 20px;width: 6px;height: 6px;text-indent: 9em;border-radius: 50%;background: #ef2b2a;}
 .lyDim{z-index: 2; position:fixed;top:0;right:0;bottom:0;left:0;background:rgba(0,0,0,0.5)}

@@ -1202,6 +1202,7 @@ button.next {
 .layer__ft-btn>button:last-child {
     background: var(--primary);
 	color:#fff;
+    border: 1px solid var(--primary);
 }
 
 
