@@ -63,12 +63,8 @@ h3{font-size: 1em;}
 .bar-block{display: block;border: 0;border-bottom: 6px solid var(--line);margin:8px 0 18px;}
 
 @media (min-width: 768px) {
-
     #wrap,
-    #contents {
-        width: 100%;
-        margin: 0 auto;
-    }
+    #contents{width: 100%; margin: 0 auto;}
 }
 
 
@@ -93,70 +89,20 @@ body {
     box-sizing: border-box;
 }
 
-#header {
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    background: rgba(255, 255, 255, 1);
-    border-bottom: 1px solid #EAEAEA;
-    /*height: 50px;*/
-    z-index: 3;
-    transition: 0.5s;
-}
-
-#header.trans {
-    background: rgba(255, 255, 255, 1);
-    border: 0;
-}
-
-
-
-#header.white {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    background: rgba(255, 255, 255, 0);
-    border: 0;
-}
-
-#contents {
-    position: relative;
-    padding-bottom: 50px;
-}
+#header {position: sticky;position: -webkit-sticky;top: 0;background: rgba(255, 255, 255, 1);border-bottom: 1px solid #EAEAEA;/*height: 50px;*/z-index: 3;transition: 0.5s;}
+#header.trans {background: rgba(255, 255, 255, 1);border: 0;}
+#header.white {position: absolute;top: 0;width: 100%;background: rgba(255, 255, 255, 0);border: 0;}
+#contents {position: relative;padding-bottom: 50px;}
 
 
 /**Common**************/
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-select {
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
-}
-
-.hidden-text {
-    display: inline-block;
-    text-indent: -9999px;
-}
-
+a {text-decoration: none;color: inherit;}
+select {-moz-appearance: none;-webkit-appearance: none;appearance: none;}
+.hidden-text {display: inline-block;text-indent: -9999px;}
 .left,
-.right {
-    display: inline-block;
-}
-
-.divider {
-    display: inline-block;
-    width: 1px;
-    height: 10px;
-    background: #CCC;
-}
-
-.open {
-    display: block !important;
-}
+.right {display: inline-block;}
+.divider {display: inline-block;width: 1px;height: 10px;background: #CCC;}
+.open {display: block !important;}
 
 .linebtn--white {
     display: inline-block;
@@ -174,9 +120,6 @@ select {
     text-decoration: none;
     cursor: pointer;
 }
-
-
-
 
 
 /**Header - white**************/
@@ -1177,14 +1120,12 @@ button.next {
 }
 
 .layer__ft-btn {
-    position: fixed;bottom: 0px;background-color: #fff;
     width: 100%;
-	padding: 10px;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
 }
-
+.layer__ft-btn.modal {position: fixed;bottom: 0px;background-color: #fff;padding: 10px;}
 .layer__ft-btn>button {
 	width: 50%;
     height: 100%;
