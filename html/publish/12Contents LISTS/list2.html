@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SLRclub</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=no">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/global.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <script src="../../js/jquery-3.4.1.min.js" type="text/javascript"></script>
+    
+</head>
+
+<body>
+    <div id="wrap">
+		<nav>
+			<ul class="fnb">
+				<li><a href="#">최신</a></li>
+				<li><a href="#">검색</a></li>
+				<li><a href="#">메뉴</a></li>
+				<li><a href="#">계정</a></li>
+				<li><a href="#">알림<span class="ico-new"></span></a></li>
+			</ul>
+		</nav>
+        <!--*****헤더영역******-->
+        <header id="header" class="trans">
+            <div class="hd__menu">
+                <h2 class="hd__title">
+                    커뮤니티
+                </h2>
+                <div class="hd__btn">
+                    <div class="btn-back">
+                        <a href="#"><span class="hidden-text">이전 페이지</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="bbsTitle">
+                <a href="#" class="titTypeA">갤러리 게시판</a>
+                <button type="button" class="ico-favo" onclick="snackbar()"></button><!-- 즐겨찾기 추가됐을 경우 selected 추가 -->
+                <div id="snackbar">자유게시판이 즐겨찾기에 추가되었습니다.</div><!-- 즐겨찾기 추가할 경우 스낵바 -->
+                <button type="button" class="ico-info "><span class="ico-new"></span></button><!-- 신규 알림이 있을 경우 <span class="ico-new"></span> 추가 -->
+                <button type="button" class="ico-search accordion"></button>
+                    <div class="panel"><!-- 검색창 펼침 -->
+                        <div class="hd__search">
+                            <a href="#" class="ico-search"></a>
+                            <input type="text" placeholder="제목 / 본문 / 닉네임을 검색하세요.">
+                            <button type="button" class="ico-close"></button>
+                        </div>
+                    </div>
+            </div>
+        </header>
+        
+        <!--*****본문영역******-->
+        <div id="contents">
+            <div class="contentList__wrap-gallery">
+                <h2 class="container titTypeB">카테고리 인기순</h2>
+                <!--카테고리 tab menu-->
+                <div class="category">
+                    <div class="list__tab__wrap btnType">
+                        <ul class="list__tab">
+                            <li class="current">전체보기</li>
+                            <li><a href="#">생태/동식물</a></li>
+                            <li><a href="#">스포츠/취미</a></li>
+                            <li><a href="#">전자기기</a></li>
+                            <li><a href="#">패션/잡화</a></li>
+                            <li><a href="#">식품</a></li>
+                            <li><a href="#">기타</a></li>
+                        </ul>
+                    </div>
+                    <a href="#category-Layer" class="categoryBtn" onclick="showHide('category-Layer');return false;">더보기</a>
+                        <!-- 더보기 버튼 클릭시 링크팝업 -->
+                        <div id="category-Layer" style="display:none;">
+                            <div class="titTypeB">전체</div>
+                            <dl>
+                                <dt>인물</dt>
+                                <dd><a href="#">일상/스냅</a><a href="#">모델/연출</a><a href="#">아이/가족</a><a href="#">행사보도</a><a href="#">누드 <span class="red">!</span></a></dd>
+                            </dl>
+                            <dl>
+                                <dt>정물</dt>
+                                <dd><a href="#">생태/동식물</a><a href="#">사물/제품</a><a href="#">건축/예술품</a></dd>
+                            </dl>
+                            <dl>
+                                <dt>풍경</dt>
+                                <dd><a href="#">자연/풍경</a><a href="#">여행/문화</a><a href="#">건축/예술품</a></dd>
+                            </dl>
+                        </div>
+                </div>
+                <div class="container">
+                    <div class="tR">
+                        <button type="button" class="listType_btn ico-gallery selected"></button><!-- 보기옵션 활성화 상태 경우 selected 추가 -->
+                        <button type="button" class="listType_btn ico-thumb"></button>
+                    </div>
+                    <!-- content list 갤러리형 -->
+                    <ul class="gallery__list">
+                        <li>
+                            <a href="#">
+                                <img src="../../images/dummy-photo01.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../../images/dummy-photo01.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../../images/dummy-photo01.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../../images/dummy-photo01.jpg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../../images/dummy-photo01.jpg">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+ 
+
+
+<script src="../../js/common.js" type="text/javascript"></script>
+</body>
+</html>
