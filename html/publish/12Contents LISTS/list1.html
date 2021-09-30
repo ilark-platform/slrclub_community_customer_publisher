@@ -18,6 +18,9 @@
     <link rel="stylesheet" href="../../css/global.css">
     <link rel="stylesheet" href="../../css/main.css">
     <script src="../../js/jquery-3.4.1.min.js" type="text/javascript"></script>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -43,51 +46,288 @@
                     </div>
                 </div>
             </div>
+            <div class="bbsTitle">
+                <a href="#" class="titTypeA">자유게시판</a>
+                <button type="button" class="ico-favo selected" onclick="snackbar()"></button><!-- 즐겨찾기 추가됐을 경우 selected 추가 -->
+                <div id="snackbar">자유게시판이 즐겨찾기에 추가되었습니다.</div><!-- 즐겨찾기 추가할 경우 스낵바 -->
+                <button type="button" class="ico-info "><span class="ico-new"></span></button><!-- 신규 알림이 있을 경우 <span class="ico-new"></span> 추가 -->
+                <button type="button" class="ico-search accordion"></button>
+                    <div class="panel"><!-- 검색창 펼침 -->
+                        <div class="hd__search">
+                            <a href="#" class="ico-search"></a>
+                            <input type="text" placeholder="제목 / 본문 / 닉네임을 검색하세요.">
+                            <button type="button" class="ico-close"></button>
+                        </div>
+                    </div>
+            </div>
         </header>
         
         <!--*****본문영역******-->
         <div id="contents">
-            <div class="">
-                <select><option>갤러리 게시판</option></select>
-                
+            <div class="main__notice">
+                <div class="notice__wrap">
+                    <a href="#" class="notice__msg"><span class="notice__icon">공지</span>유튜브 감상 후기 남기면 α7C 렌즈킷이!? </a>
+                    <button class="notice__close">닫기</button>
+                </div>
             </div>
-            <div class="menu__wrap">
+            <div class="contentList__wrap">
+                <h2 class="container titTypeA mgt2">이 카테고리에서 인기 있는 항목</h2>
+                <!-- Swiper -->
+                <div class="swiper contentList_slide">
+                    <div class="swiper-wrapper">
+                        <a class="swiper-slide">
+                            <img src="../../images/dummy-event01.png">
+                            <div class="list__content">
+                                <h4>자유게시판</h4>
+                                <h3>미러리스 시대의 거함거포 - SIGMA 35mm f/1.2 Art</h3>
+                                <div class="list__content--info">
+                                    <span class="list__info--writer">딸기스티커</span><span class="list__info--date">2021-08-23</span>
+                                    <span class="list__info--recomm">265</span><span class="list__info--reply">32</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="swiper-slide">
+                            <img src="../../images/dummy-photo01.jpg">
+                            <div class="list__content">
+                                <h4>자유게시판</h4>
+                                <h3>미러리스 시대의 거함거포 - SIGMA 35mm f/1.2 Art</h3>
+                                <div class="list__content--info">
+                                    <span class="list__info--writer">딸기스티커</span><span class="list__info--date">2021-08-23</span>
+                                    <span class="list__info--recomm">265</span><span class="list__info--reply">32</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-3.jpg">
+                            <div class="list__content">
+                                <h4>자유게시판</h4>
+                                <h3>미러리스 시대의 거함거포 - SIGMA 35mm f/1.2 Art</h3>
+                                <div class="list__content--info">
+                                    <span class="list__info--writer">딸기스티커</span><span class="list__info--date">2021-08-23</span>
+                                    <span class="list__info--recomm">265</span><span class="list__info--reply">32</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-4.jpg">
+                            <div class="list__content">
+                                <h4>자유게시판</h4>
+                                <h3>미러리스 시대의 거함거포 - SIGMA 35mm f/1.2 Art</h3>
+                                <div class="list__content--info">
+                                    <span class="list__info--writer">딸기스티커</span><span class="list__info--date">2021-08-23</span>
+                                    <span class="list__info--recomm">265</span><span class="list__info--reply">32</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 배너 -->
+                <div class="container list__banner">
+                    <img src="../../images/dummy-banner01.png">
+                </div>
+
+                <h2 class="container titTypeB">카테고리</h2>
+                <!--카테고리 tab menu-->
+                <div class="list__tab__wrap btnType">
+                    <ul class="list__tab">
+                        <li class="current">전체보기</li>
+                        <li><a href="#">카메라</a></li>
+                        <li><a href="#">통신</a></li>
+                        <li><a href="#">전자기기</a></li>
+                        <li><a href="#">패션/잡화</a></li>
+                        <li><a href="#">식품</a></li>
+                        <li><a href="#">기타</a></li>
+                    </ul>
+                </div>
+
                 <div class="container">
-                    <ul class="board__list notice">
+                    <div class="tR">
+                        <button type="button" class="listType_btn ico-list selected"></button><!-- 보기옵션 활성화 상태 경우 selected 추가 -->
+                        <button type="button" class="listType_btn ico-thumb"></button>
+                    </div>
+                    <!-- content list 목록형 -->
+                    <ul class="board__list">
                         <li class="list__type--line">
                             <a href="#">
-                                <div class="list__content w100">
-                                    <h3>니콘카메라와 사진을 즐기는 확실한 방법</h3>
+                                <div class="list__content">
+                                    <h4>포럼</h4>
+                                    <h3>미러리스 시대의 거함거포 - SIGMA 35mm f/1.2 Art</h3>
                                     <div class="list__content--info">
-                                        <span class="list__info--writer">SLR_Nikon MNG</span><span class="list__info--date">2021-08-23</span>
+                                        <span class="list__info--writer">딸기스티커</span><span class="list__info--date">2021-08-23</span>
+                                        <span class="list__info--recomm">265</span><span class="list__info--reply">32</span>
                                     </div>
-                                    <h5>2021년 8월 온라인 니콘 스쿨 지금, 생생한 라이브 강연이 준비되어 있습니다. 2021년 8월 온라인 니콘 스쿨 지금, 생생한 라이브 강연이 준비되어 있습니다.</h5>
+                                </div>
+                                <div class="list__photo">
+                                    <img src="../../images/dummy-photo01.jpg">
+                                </div>
+                            </a>
+                            <!-- 댓글 펼치기/닫기 -->
+                            <div class="reply_box">
+                                <button class="accordion">댓글 보기</button>
+                                <div class="panel">
+                                    <div class="list__type--line">
+                                        <a href="#">
+                                            <div class="list__content">
+                                                <h4>자유게시판</h4>
+                                                <h3>미러리스 시대의 거함거포 - SIGMA 35mm f/1.2 Art</h3>
+                                                <div class="list__content--info">
+                                                    <span class="list__info--writer">딸기스티커</span><span class="list__info--date">2021-08-23</span>
+                                                    <span class="list__info--recomm">265</span><span class="list__info--reply">32</span>
+                                                </div>
+                                            </div>
+                                            <div class="list__photo">
+                                                <img src="../../images/dummy-photo01.jpg">
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="list__content w100"><!-- 이미지가 없을 경우 w100추가 -->
+                                                <h4>자유게시판</h4>
+                                                <h3>미러리스 시대의 거함거포 - SIGMA 35mm f/1.2 Art</h3>
+                                                <div class="list__content--info">
+                                                    <span class="list__info--writer">딸기스티커</span><span class="list__info--date">2021-08-23</span>
+                                                    <span class="list__info--recomm">265</span><span class="list__info--reply">32</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list__type--line">
+                            <a href="#">
+                                <div class="list__content">
+                                    <h4>자유게시판</h4>
+                                    <h3>미러리스 시대의 거함거포 - SIGMA 35mm f/1.2 Art</h3>
+                                    <div class="list__content--info">
+                                        <span class="list__info--writer">딸기스티커</span><span class="list__info--date">2021-08-23</span>
+                                        <span class="list__info--recomm">265</span><span class="list__info--reply">32</span>
+                                    </div>
+                                </div>
+                                <div class="list__photo">
+                                    <img src="../../images/dummy-photo01.jpg">
                                 </div>
                             </a>
                         </li>
                         <li class="list__type--line">
                             <a href="#">
-                                <div class="list__content w100">
-                                    <h3>니콘카메라와 사진을 즐기는 확실한 방법</h3>
+                                <div class="list__content">
+                                    <h4>자유게시판</h4>
+                                    <h3>미러리스 시대의 거함거포 - SIGMA 35mm f/1.2 Art</h3>
                                     <div class="list__content--info">
-                                        <span class="list__info--writer">SLR_Nikon MNG</span><span class="list__info--date">2021-08-23</span>
+                                        <span class="list__info--writer">딸기스티커</span><span class="list__info--date">2021-08-23</span>
+                                        <span class="list__info--recomm">265</span><span class="list__info--reply">32</span>
                                     </div>
-                                    <h5>2021년 8월 온라인 니콘 스쿨 지금, 생생한 라이브 강연이 준비되어 있습니다. 2021년 8월 온라인 니콘 스쿨 지금, 생생한 라이브 강연이 준비되어 있습니다.</h5>
                                 </div>
-                            </a>
-                        </li>
-                        <li class="list__type--line">
-                            <a href="#">
-                                <div class="list__content w100">
-                                    <h3>니콘카메라와 사진을 즐기는 확실한 방법</h3>
-                                    <div class="list__content--info">
-                                        <span class="list__info--writer">SLR_Nikon MNG</span><span class="list__info--date">2021-08-23</span>
-                                    </div>
-                                    <h5>2021년 8월 온라인 니콘 스쿨 지금, 생생한 라이브 강연이 준비되어 있습니다. 2021년 8월 온라인 니콘 스쿨 지금, 생생한 라이브 강연이 준비되어 있습니다.</h5>
+                                <div class="list__photo">
+                                    <img src="../../images/dummy-photo01.jpg">
                                 </div>
                             </a>
                         </li>
                     </ul>
+
+                    <!-- content list 이미지형 -->
+                    <ul class="board__list thumb">
+                        <li class="list__type--line">
+                            <div class="list__content">
+                                <h4>포럼</h4>
+                                <h3>미러리스 시대의 거함거포 - SIGMA 35mm f/1.2 Art</h3>
+                                <div class="list__content--info">
+                                    <span class="list__info--writer">딸기스티커</span><span class="list__info--date">2021-08-23</span>
+                                    <span class="list__info--recomm">265</span><span class="list__info--reply">32</span>
+                                </div>
+                                <a href="#more-BTN-Layer" class="moreBtn" onclick="showHide('more-BTN-Layer');return false;">더보기</a>
+                                    <!-- 더보기 버튼 클릭시 링크팝업 -->
+                                    <div id="more-BTN-Layer" style="display:none;">
+                                        <a href="#">공유하기</a>
+                                        <a href="#">스크랩하기</a>
+                                        <a href="#">이 컨텐츠 신고하기</a>
+                                        <a href="#">레드리본 달기</a>
+                                    </div>
+                            </div>
+                            <a class="thumb__photo">
+                                <img src="../../images/dummy-photo01.jpg">
+                                <p>
+                                    인천 서구 검암동 검암2지구 풍림3차 아파트쪽 대로변에 주차 후 카메라 쇼핑백을 두고 차량 지붕에 두고 귀가, 1시간 후 두고 온 것을 확인하였으나, 분실됨 카메라 쇼핑백을 두고 차량 지붕에 두고 귀가
+                                </p>
+                            </a>
+                        </li>
+                        <li class="list__type--line">
+                            <div class="list__content">
+                                <h4>포럼</h4>
+                                <h3>미러리스 시대의 거함거포 - SIGMA 35mm f/1.2 Art</h3>
+                                <div class="list__content--info">
+                                    <span class="list__info--writer">딸기스티커</span><span class="list__info--date">2021-08-23</span>
+                                    <span class="list__info--recomm">265</span><span class="list__info--reply">32</span>
+                                </div>
+                                <a href="#more-BTN-Layer" class="moreBtn" onclick="showHide('more-BTN-Layer');return false;">더보기</a>
+                                    <!-- 더보기 버튼 클릭시 링크팝업 -->
+                                    <div id="more-BTN-Layer" style="display:none;">
+                                        <a href="#">공유하기</a>
+                                        <a href="#">스크랩하기</a>
+                                        <a href="#">이 컨텐츠 신고하기</a>
+                                        <a href="#">레드리본 달기</a>
+                                    </div>
+                            </div>
+                            <a class="thumb__photo noimg"><!-- 사진이미지 없을 경우 noimg 추가 -->
+                                <p>
+                                    인천 서구 검암동 검암2지구 풍림3차 아파트쪽 대로변에 주차 후 카메라 쇼핑백을 두고 차량 지붕에 두고 귀가, 1시간 후 두고 온 것을 확인하였으나, 분실됨 카메라 쇼핑백을 두고 차량 지붕에 두고 귀가
+                                </p>
+                            </a>
+                        </li>
+                        <li class="list__type--line">
+                            <div class="list__content">
+                                <h4>포럼</h4>
+                                <h3>미러리스 시대의 거함거포 - SIGMA 35mm f/1.2 Art</h3>
+                                <div class="list__content--info">
+                                    <span class="list__info--writer">딸기스티커</span><span class="list__info--date">2021-08-23</span>
+                                    <span class="list__info--recomm">265</span><span class="list__info--reply">32</span>
+                                </div>
+                                <a href="#more-BTN-Layer" class="moreBtn" onclick="showHide('more-BTN-Layer');return false;">더보기</a>
+                                    <!-- 더보기 버튼 클릭시 링크팝업 -->
+                                    <div id="more-BTN-Layer" style="display:none;">
+                                        <a href="#">공유하기</a>
+                                        <a href="#">스크랩하기</a>
+                                        <a href="#">이 컨텐츠 신고하기</a>
+                                        <a href="#">레드리본 달기</a>
+                                    </div>
+                            </div>
+                            <a class="thumb__photo noimg">
+                                <p>
+                                    인천 서구 검암동 검암2지구 풍림3차 아파트쪽 대로변에 주차 후 카메라 쇼핑백을 두고 차량 지붕에 두고 귀가, 1시간 후 두고 온 것을 확인하였으나, 분실됨 카메라 쇼핑백을 두고 차량 지붕에 두고 귀가
+                                </p>
+                            </a>
+                        </li>
+                        <li class="list__type--line">
+                            <div class="list__content">
+                                <h4>포럼</h4>
+                                <h3>미러리스 시대의 거함거포 - SIGMA 35mm f/1.2 Art</h3>
+                                <div class="list__content--info">
+                                    <span class="list__info--writer">딸기스티커</span><span class="list__info--date">2021-08-23</span>
+                                    <span class="list__info--recomm">265</span><span class="list__info--reply">32</span>
+                                </div>
+                                <a href="#more-BTN-Layer" class="moreBtn" onclick="showHide('more-BTN-Layer');return false;">더보기</a>
+                                    <!-- 더보기 버튼 클릭시 링크팝업 -->
+                                    <div id="more-BTN-Layer" style="display:none;">
+                                        <a href="#">공유하기</a>
+                                        <a href="#">스크랩하기</a>
+                                        <a href="#">이 컨텐츠 신고하기</a>
+                                        <a href="#">레드리본 달기</a>
+                                    </div>
+                            </div>
+                            <a class="thumb__photo">
+                                <img src="../../images/dummy-photo01.jpg">
+                                <p>
+                                    인천 서구 검암동 검암2지구 풍림3차 아파트쪽 대로변에 주차 후 카메라 쇼핑백을 두고 차량 지붕에 두고 귀가, 1시간 후 두고 온 것을 확인하였으나, 분실됨 카메라 쇼핑백을 두고 차량 지붕에 두고 귀가
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 배너 -->
+                <div class="container list__banner">
+                    <img src="../../images/dummy-banner01.png">
                 </div>
             </div>
         </div>
@@ -96,6 +336,21 @@
 
 
 <script src="../../js/common.js" type="text/javascript"></script>
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".contentList_slide", {
+    slidesPerView: 1.1,
+    spaceBetween: 18,
+    grabCursor: true,
+    pagination: {
+        //el: ".swiper-pagination",
+        clickable: true,
+    },
+    });
+</script>
 
 </body>
 </html>

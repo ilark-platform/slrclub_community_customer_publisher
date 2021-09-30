@@ -78,3 +78,38 @@ $('.js-click-modal').click(function(){
         $(".modal-bottomUp").css("display","none");
         posY = $(window).scrollTop(posY);
     });
+
+/*snackbar*/
+function snackbar() {
+    var x = document.getElementById("snackbar");
+    x.className = "show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    }
+
+/* accordion */
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+    panel.style.display = "none";
+    } else {
+    panel.style.display = "block";
+    }
+});
+}
+
+/* moreBTN Layer */
+var cc=0
+function showHide(id) {
+    if (cc==0) {
+        cc=1
+        document.getElementById(id).style.display="block";
+    } else {
+        cc=0
+        document.getElementById(id).style.display="none";
+    }
+}
