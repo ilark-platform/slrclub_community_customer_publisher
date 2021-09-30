@@ -127,7 +127,7 @@ li.current {border-bottom:3px solid var(--primary);color: #333;font-weight: bold
 .listType_btn{border:1px solid var(--lightline);border-radius: 3px; padding:4px;width:34px;height:30px;opacity:.5}
 .listType_btn.ico-list{background-size: 22px;}
 .listType_btn.ico-thumb{background-size: 22px;}
-.listType_btn.ico-gallery{background-size: 22px;}
+.listType_btn.ico-gallery{background-size: 18px;}
 .listType_btn.selected{opacity:1}
 .reply_box .accordion{background:var(--line);border-radius: 4px; padding:4px 10px;font-size: 12px;}
 .reply_box  button.accordion:after{float: unset;}
