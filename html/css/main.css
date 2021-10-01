@@ -89,6 +89,9 @@ li.current {border-bottom:3px solid var(--primary);color: #333;font-weight: bold
 #category-Layer dd a {margin: 0 4px;}
 #category-Layer dd a>span {color:var(--red)}
 
+.content_view_text img{width:100%;object-fit: cover;border-radius: 2px;margin:10px auto}
+.content_view .list__content>h3{white-space: unset;}
+.hashtag li{color:var(--grayText); display: inline-block; background: var(--line);border-radius: 20px;padding:3px 8px;margin-right: 2px;}
 
 .bbsTitle{position: relative; padding:6px 20px 10px;border-bottom: 1px solid #ddd;}
 .bbsTitle>.titTypeA{font-size: 20px;}
