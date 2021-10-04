@@ -25,6 +25,7 @@
 <!--modal pop-->
 <div class="modal-bottomUp">
     <div class="modal__box">
+        <div id="contents">
         <div id="header" class="trans">
             <div class="hd__menu">
                 <h2 class="hd__title">
@@ -55,27 +56,54 @@
                 <p>
                     인천 서구 검암동 검암2지구 풍림3차 아파트쪽 대로변에 주차 후 카메라 쇼핑백을 두고 차량 지붕에 두고 귀가, 1시간 후 두고 온 것을 확인하였으나, 분실됨 카메라 쇼핑백을 두고 차량 지붕에 두고 귀가
                 </p>
-                <ul class="hashtag">
+                <ul class="hashtag mgt2">
                     <li>#해바라기</li>
                     <li>#해바라기</li>
                     <li>#해바라기</li>
                 </ul>
+                <!-- 글작성자에게만 노출 -->
+                <div class="mgt1 positionR tR">
+                    <a href="#more-BTN-Layer" class="editBtn" onclick="showHide('more-BTN-Layer');return false;">편집</a>
+                    <!-- 편집 버튼 클릭시 링크팝업 -->
+                    <div id="more-BTN-Layer" style="display:none;">
+                        <a href="#">수정하기</a>
+                        <a href="#">삭제하기</a>
+                    </div>
+                </div>
             </div>
-            <div class="reply">
 
-            </div>
-<hr>
+        </div>
+        <!-- 배너 -->
+        <div class="container list__banner">
+            <img src="../../images/dummy-banner01.png">
+        </div>
 
-
+        <!-- 이전글/다음글 -->
+        <div class="content_next_wrap">
+            <a href="#">
+                <div class="pre_view ico-arrow-left">이전글</div>
+                <div class="list__content">
+                    <h3>미러리스 시대의 거함거포 - SIGMA 35mm f/1.2 Art</h3>
+                    <span>by 딸기스티커</span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="next_view ico-arrow-right">다음글</div>
+                <div class="list__content">
+                    <h3>미러리스 시대의 거함거포 - SIGMA 35mm f/1.2 Art</h3>
+                    <span>by 딸기스티커</span>
+                </div>
+            </a>
+        </div>
 </div>
 <!--//modal pop-->
 <nav>
     <ul class="fnb type-content">
-        <li><a href="#">최신</a></li>
-        <li><a href="#">검색</a></li>
-        <li><a href="#">메뉴</a></li>
-        <li><a href="#">계정</a></li>
-        <li><a href="#">알림<span class="ico-new"></span></a></li>
+        <li><a href="#">공감<span>234</span></a></li>
+        <li><a href="#">댓글<span>234</span></a></li>
+        <li><a href="#">공유</a></li>
+        <li><a href="#">메뉴 더보기</a></li>
+        <li><a href="#">스크랩</a></li>
     </ul>
 </nav>
 <script src="../../js/common.js" type="text/javascript"></script>

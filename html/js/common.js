@@ -113,3 +113,23 @@ function showHide(id) {
         document.getElementById(id).style.display="none";
     }
 }
+
+
+/*비밀번호 show hidden 버튼*/
+function pswFirst() {
+    var x = document.getElementById("pswFirst");
+    if (x.type === "password") {
+        x.type = "text";
+    } else {
+        x.type = "password";
+    }
+}
+/*비밀번호확인 show hidden 버튼*/
+function pswSecond() {
+    var x = document.getElementById("pswSecond");
+    if (x.type === "password") {
+        x.type = "text";
+    } else {
+        x.type = "password";
+    }
+}
