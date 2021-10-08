@@ -37,11 +37,11 @@ function hideBtn() {
 }
 
 function fx_TopBtn() { 
-    if ( window.pageYOffset >= 600 ) { 
+    if ( window.pageYOffset >= 150 ) { 
         document.getElementById("TopBtn").style.display = "block"; 
         document.getElementById("TopBtn").style.animationName = "fadein"; 
         Flag_clrBtn = 1; 
-    } else if ( window.pageYOffset < 600 && Flag_clrBtn ) { 
+    } else if ( window.pageYOffset < 150 && Flag_clrBtn ) { 
         Flag_clrBtn = 0; 
         document.getElementById("TopBtn").style.animationName = "fadeout"; 
         document.getElementById("TopBtn").style.animationFillMode = "forwards"; 

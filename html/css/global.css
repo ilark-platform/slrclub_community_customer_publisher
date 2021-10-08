@@ -302,19 +302,20 @@ select {-moz-appearance: none;-webkit-appearance: none;appearance: none;}
     animation-fill-mode: forwards;
 }
 
+#TopBtn button[class*="btn-"] {position: absolute;right: 12px;bottom: 20px;width: 45px;height: 45px;border-radius: 50%;box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.1);}
 .btn-totop {
-    position: absolute;
-    right: 12px;
-    bottom: 0;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    background: url(../images/btn-totop.svg) center no-repeat;
-    background-size: 24px;
-    background-color: rgba(255, 255, 255, 1);box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.1);
+    background: url(../images/ico-arrow-top.svg) center no-repeat;
+    background-size: 16px;
+    background-color: #fff;
     border: 1px solid #e2e2e2;
 }
-
+.btn-write {
+    bottom: 69px!important;
+    background: url(../images/ico-pencil.svg) center no-repeat;
+    background-size: 20px;
+    background-color: var(--primary);
+    border: 0px;
+}
 
 
 .animation {
@@ -794,8 +795,16 @@ input[type=checkbox].ic-psw:checked+label {
     background-size: 14px;
     text-indent: 16px;
 }
-
-
+.onboard{height: 100vh;}
+.onboard .swiper-slide {padding: 80px 24px 80px;}
+.onboard .swiper-slide >h2 {color: var(--primary);font-size: 24px;font-weight: 700; line-height: 36px;}
+.onboard .swiper-slide >h3 {color:var(--grayText);font-size: 22px;padding:4px 0 36px;}
+.onboard .swiper-slide .btn-primary{position: absolute;bottom: 10px;left: 5%;width:90%;}
+.onboard .swiper-pagination{bottom: 80px !important;}
+.onboard div[class*=onboarding_visual] {text-align: center;width: 100%;height: 280px;margin: 20px auto 10px;background-size: 80%;}
+.onboarding_visual {background: url(../images/onboarding03.svg) center no-repeat;}
+.onboarding_visual02 {background: url(../images/onboarding01.svg) center no-repeat;}
+.onboarding_visual03 {background: url(../images/onboarding02.svg) center no-repeat;}
 
 /**계정찾기**/
 .tab__email {
