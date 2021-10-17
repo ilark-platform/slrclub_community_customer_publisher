@@ -1,1 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="9.882" height="17.765" viewBox="0 0 9.882 17.765"><defs><style>.a{fill:none;stroke:#333;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs><g transform="translate(-7 1.414)"><path class="a" d="M12.468,19.936,5,12.468,12.468,5" transform="translate(3 -5)"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="9.882" height="17.764" viewBox="0 0 9.882 17.764">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #333;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="ico-arrow-left" transform="translate(-7 1.414)">
+    <path id="패스_232" data-name="패스 232" class="cls-1" d="M12.468,19.936,5,12.468,12.468,5" transform="translate(3 -5)"/>
+  </g>
+</svg>

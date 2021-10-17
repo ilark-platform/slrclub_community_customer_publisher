@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SLRclub</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=no">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/global.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <script src="../../js/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div id="wrap" class="bgGray">
+        <!-- Swiper -->
+        <div class="swiper onboard">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <h2>내가 자주 가는 게시판을 즐겨찾기!</h2>
+                    <h3>더 빠르게 접근 할 수 있어요.</h3>
+                    <div class="onboarding_visual"></div>
+                </div>
+                <div class="swiper-slide">
+                    <h2>컨텐츠 카드가 이미지 추가가 되어 </h2>
+                    <h3>더 빠르게 이미지 위주의 탐색</h3>
+                    <div class="onboarding_visual02"></div>
+                </div>
+                <div class="swiper-slide" style="padding-top:60px">
+                    <h2>커뮤니티 문화 </h2>
+                    <h2>지켜야 할 사항</h2>
+                    <h2>3일 뒤에 쓰기 가능 안내</h2>
+                    <div class="onboarding_visual03"></div>
+                    <button type="button" class="btn-primary mgt2">SLR클럽 시작하기</button>
+
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>        
+    </div>
+ 
+
+
+<script src="../../js/common.js" type="text/javascript"></script>
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".onboard", {
+        autoplay: {
+          //delay: 2500,
+          //disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+</script>
+
+</body>
+</html>
