@@ -38,45 +38,36 @@
         <header id="header" class="trans">
             <div class="hd__menu">
                 <h2 class="hd__title">
-                    고객센터
+                    쪽지함
                 </h2>
                 <div class="hd__btn">
                     <div class="btn-back">
                         <a href="#"><span class="hidden-text">이전 페이지</span></a>
                     </div>
                 </div>
+                <div class="hd__btn">
+                    <div class="btn-info">
+                        <a href="#" class="ico-info"><span class="hidden-text">정보보기</span></a>
+                    </div>
+                </div>
             </div>
         </header>
 
       <!--*****본문영역******-->
-      <div id="contents" class="account_custom">
-        <div class="container">
-            <div class="cscenter">
-                <div class="bg">
-                    <h2 class="titTypeA">SLR클럽 고객센터입니다.</h2>
-                    사진 전문 온라인 커뮤니티로서, 여러분에게 즐거운 커뮤니티 문화를 제공하는 것은 우리에게 매우 중요합니다. 사진 특화된 우리의 커뮤니티는 SLR 클럽만의 차별점입니다. <br><br>
-                </div>
-                아래에서 커뮤니티 이용시 필요한 정보를 찾아보세요.<br>
-                그 외에 궁금한 사항이 있으시면 1:1 문의를 주세요.
-            </div>
-            <a href="#" class="custom-subject">
-                <h2>자주 묻는 질문</h2>
-                <div class="noswitch"></div>
-            </a>
-            <a href="#" class="custom-subject">
-                <h2>1:1 문의하기</h2>
-                <div class="lower">
-                    제안사항, 이용문의, 제휴 문의<br>또는 더 궁금하신 부분이 있으면 문의해주세요.
-                </div>
-                <div class="noswitch"></div>
-            </a>
-            <a href="#" class="custom-subject">
-                <h2>SLR클럽 신고센터</h2>
-                <div class="lower">
-                    유해게시물, 서비스장애, 개인정보도용 살계의 발견<br>또는 게시물 저작권리 침해사항이 있을 경우<br>신고센터로 접수해주세요.
-                </div>
-                <div class="noswitch"></div>
-            </a>
+      <div id="contents">
+         <!-- tab menu-->
+         <div class="list__tab__wrap">
+            <ul class="list__tab w100">
+                <li class="tab-recent current">쪽지  보내기</li>
+                <li class="tab-recomm">받은 쪽지함</li>
+                <li class="tab-recomm">보낸 쪽지함</li>
+            </ul>
+        </div>  
+        <div class="container account_note">
+            <input type="text" placeholder="아이디" class="mgt1">
+            <input type="text" placeholder="제목" class="mgt1">
+            <textarea rows="12" class="mgt1">내용</textarea>
+            <button type="button" class="btn-primary mgt2">쪽지 보내기</button>
         </div>
     </div>
 </div>

@@ -57,7 +57,7 @@ nav ul.type-write .btn-primary {width:20%; margin-left: 4px;}
 .moreviewBtn{display: inline-block;width:100%;text-align: center;padding:0px 0 10px; }
 .moreviewBtn::before{content: '';display: inline-block;width:20px;height: 20px; background: url(../images/ico-plus.svg) 0 bottom no-repeat;opacity: .6; background-size: 13px;}
 .list__banner>img{width:100%;background-size: contain; padding:30px 0px;border-radius: var(--border-radius);}
-.list__tab__wrap {width: 100%;margin: 8px 0 20px;border-bottom: 1px solid var(--line);overflow-x: auto; -ms-overflow-style: none;scrollbar-width: none;}
+.list__tab__wrap {width: 100%;margin: 8px 0 20px;border-bottom: 1px solid var(--lightline);overflow-x: auto; -ms-overflow-style: none;scrollbar-width: none;}
 .list__tab__wrap::-webkit-scrollbar {display: none;}
 .list__tab {width: max-content;height: 35px;}
 .list__tab>li {float: left;display: inline-block;margin: 0 18px 0px 0;padding: 0 2px;line-height: 32px;color: var(--grayText);}
