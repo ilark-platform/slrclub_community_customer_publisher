@@ -880,7 +880,25 @@ input[type=checkbox].ic-psw:checked+label {
 .account_note_pop .list__type--line .list__content{width:100%;border-bottom: 1px solid var(--lightline);padding:0 0 10px;margin-bottom: 10px;}
 .pop_btn_group button[class*=ico-] {padding-left:24px;background-size: contain;}
 .pop_btn_group{margin:20px 0}
-.point-date{}
+.account_point .list__type--line{display: flex;justify-content: space-between;}
+.mypoint{position: relative;text-align: center; width: 100%; background-color: var(--line);padding: 14px 0 14px 26px;margin: 6px 0 14px;border-radius: 10px;}
+.mypoint:before{content: '';vertical-align: middle; position: absolute;left: 90px;top:10px; background:url(../images/ico-point.svg) center no-repeat;width: 50px;height: 50px;background-size: 72%;opacity: .8;}
+.mypoint>strong{font-size: 24px;color: var(--primary);} 
+.point-date{width: 50px;}
+.point-value{text-align: right; width: 70px;padding-right: 8px;color: var(--grayText);}
+.point-value>strong{color: var(--primary);font-weight: bold;font-size: 15px;padding-right: 4px;}
+
+/**이용약관**/
+.policy--wrap{width: 100%; height: 100%;}
+.policy--chapter{position: relative; width: 100%; box-sizing: border-box; background: #FFF;border: 1px solid #ddd;border-radius: 6px;}
+.policy--chapter > .chapter-select{width: 100%; line-height: 48px; padding: 0 16px; font-weight: bold; border-bottom: 2px solid var(--primary); background: url(../images/ico-arrow-down-black.svg) #FFF right 16px center no-repeat; background-size: 14px;}
+.spot{line-height: 110px;}
+.chapter-option{display: none;}
+.chapter-option-open{display: block; position: absolute; left: 0; top: 50px; width: 100%; border: 1px solid #A0A0A0; box-sizing: border-box; background: #FFF;}
+.chapter-option > li{width: 100%; line-height: 40px; padding: 0 16px; box-sizing: border-box; color: #707070; border-bottom: 1px solid #CCC; font-size: 0.9em;}
+.chapter-option > li:last-child{border-bottom: 0;}
+.policy--contents{padding: 20px 6px 60px; box-sizing: border-box;}
+.policy--contents > p{margin-bottom: 8px}
 
 .sub__notice{width:100%;background: var(--line);border-radius: 6px;}
 .sub__notice .notice__msg{color:#707070}
