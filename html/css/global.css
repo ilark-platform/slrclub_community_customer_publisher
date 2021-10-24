@@ -900,6 +900,14 @@ input[type=checkbox].ic-psw:checked+label {
 .policy--contents{padding: 20px 6px 60px; box-sizing: border-box;}
 .policy--contents > p{margin-bottom: 8px}
 
+.question{display: flex; align-items: center; background-color: #FFF; padding:0 20px 0 3px; width: 100%; height: 55px; box-sizing: border-box; border-bottom: 1px solid #EAEAEA; transition: 0.4s; background: url(../images/ico-arrow-down.svg) right 10px center #FFF no-repeat; background-size: 12px; text-overflow: ellipsis;}
+.question > span{width: 100%; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;}
+.opened > span{text-overflow: inherit;}
+.opened{background: url(../images/ico-arrow-up-black.svg) right 10px center #FFF no-repeat; background-size: 12px; border: 0;}
+.panel{display: none; padding:0 4px 10px; background: #FFF; overflow: hidden;border-bottom: 1px solid #EAEAEA;}
+.answer{width: 100%; box-sizing: border-box; padding:10px;background: var(--line); border-radius:4px; color: #707070;}
+
+
 .sub__notice{width:100%;background: var(--line);border-radius: 6px;}
 .sub__notice .notice__msg{color:#707070}
 .sub__notice .notice__close{background:url(../images/ico-close.svg) center no-repeat;background-size: 15px;}

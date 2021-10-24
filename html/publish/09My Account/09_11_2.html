@@ -49,10 +49,56 @@
         </header>
 
       <!--*****본문영역******-->
-      <div id="contents" class="account_custom">
+      <div id="contents">
         <div class="container">
-            <h2 class="titTypeA">TOPIC 1</h2>
-               
+            <h2 class="titTypeA mgt1">TOPIC 1</h2>
+            <div class="question"><span>We provide the athletic gear necess?</span></div>
+            <div class="panel">
+                <div class="answer">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat purus tortor magna dolor dolor. Morbi orci quis sed tincidunt. Ut vitae accumsan et sed pretium quam. Quam mauris mattis lectus purus at netus blandit pharetra. Tristique purus turpis ac aenean dolor. Sed id </p>
+                </div>
+            </div>
+            <div class="question"><span>We provide the athletic gear necess?</span></div>
+            <div class="panel">
+                <div class="answer">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat purus tortor magna dolor dolor. Morbi orci quis sed tincidunt. Ut vitae accumsan et sed pretium quam. Quam mauris mattis lectus purus at netus blandit pharetra. Tristique purus turpis ac aenean dolor. Sed id </p>
+                </div>
+            </div>
+            <div class="question"><span>We provide the athletic gear necess?</span></div>
+            <div class="panel">
+                <div class="answer">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat purus tortor magna dolor dolor. Morbi orci quis sed tincidunt. Ut vitae accumsan et sed pretium quam. Quam mauris mattis lectus purus at netus blandit pharetra. Tristique purus turpis ac aenean dolor. Sed id.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat purus tortor magna dolor dolor. Morbi orci quis sed tincidunt. Ut vitae accumsan et sed pretium quam. Quam mauris mattis lectus purus at netus blandit pharetra. Tristique purus turpis ac aenean dolor. Sed id </p>
+                </div>
+            </div>
+            
+            <h2 class="titTypeA mgt2">TOPIC 2</h2>
+            <div class="question"><span>We provide the athletic gear necess?</span></div>
+            <div class="panel">
+                <div class="answer">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat purus tortor magna dolor dolor. Morbi orci quis sed tincidunt. Ut vitae accumsan et sed pretium quam. Quam mauris mattis lectus purus at netus blandit pharetra. Tristique purus turpis ac aenean dolor. Sed id </p>
+                </div>
+            </div>
+            <div class="question"><span>We provide the athletic gear necess?</span></div>
+            <div class="panel">
+                <div class="answer">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat purus tortor magna dolor dolor. Morbi orci quis sed tincidunt. Ut vitae accumsan et sed pretium quam. Quam mauris mattis lectus purus at netus blandit pharetra. Tristique purus turpis ac aenean dolor. Sed id </p>
+                </div>
+            </div>
+
+            <h2 class="titTypeA mgt2">TOPIC 3</h2>
+            <div class="question"><span>We provide the athletic gear necess?</span></div>
+            <div class="panel">
+                <div class="answer">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat purus tortor magna dolor dolor. Morbi orci quis sed tincidunt. Ut vitae accumsan et sed pretium quam. Quam mauris mattis lectus purus at netus blandit pharetra. Tristique purus turpis ac aenean dolor. Sed id </p>
+                </div>
+            </div>
+            <div class="question"><span>We provide the athletic gear necess?</span></div>
+            <div class="panel">
+                <div class="answer">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat purus tortor magna dolor dolor. Morbi orci quis sed tincidunt. Ut vitae accumsan et sed pretium quam. Quam mauris mattis lectus purus at netus blandit pharetra. Tristique purus turpis ac aenean dolor. Sed id </p>
+                </div>
+            </div>
+ 
         </div>
     </div>
 </div>
@@ -60,6 +106,22 @@
 
 
 <script src="../../js/common.js" type="text/javascript"></script>
+<script>
+    var acc = document.getElementsByClassName("question");
+    var i;
 
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("opened");
+
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+</script>
 </body>
 </html>

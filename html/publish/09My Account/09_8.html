@@ -50,7 +50,7 @@
 
       <!--*****본문영역******-->
       <div id="contents">
-        <div class="container">
+        <div class="container mgt1">
             
             <dl class="policy--wrap">
                 <dt class="policy--chapter" id="chapterFirst">
@@ -59,8 +59,7 @@
                         <li class="opt-first">이용약관</li>
                         <li class="opt-second">개인정보 처리방침</li>
                         <li class="opt-third">청소년 보호 정책</li>
-                        <li class="opt-fourth">청소년 보호 정책</li>
-                        <li class="opt-fiveth">이메일 무단 수집 거부</li>
+                        <li class="opt-fourth">이메일 무단 수집 거부</li>
                     </ul>
                 </dt>
                 <dd class="policy--contents">
@@ -72,8 +71,7 @@
                         <li class="opt-first">이용약관</li>
                         <li class="opt-second">개인정보 처리방침</li>
                         <li class="opt-third">청소년 보호 정책</li>
-                        <li class="opt-fourth">청소년 보호 정책</li>
-                        <li class="opt-fiveth">이메일 무단 수집 거부</li>
+                        <li class="opt-fourth">이메일 무단 수집 거부</li>
                     </ul>
                 </dt>
                 <dd class="policy--contents">
@@ -85,13 +83,25 @@
                         <li class="opt-first">이용약관</li>
                         <li class="opt-second">개인정보 처리방침</li>
                         <li class="opt-third">청소년 보호 정책</li>
-                        <li class="opt-fourth">청소년 보호 정책</li>
-                        <li class="opt-fiveth">이메일 무단 수집 거부</li>
+                        <li class="opt-fourth">이메일 무단 수집 거부</li>
                     </ul>
                 </dt>
                 <dd class="policy--contents">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                 </dd>
+                <dt class="policy--chapter" id="chapterFourth">
+                    <div class="chapter-select">이메일 무단 수집 거부</div>
+                    <ul class="chapter-option">
+                        <li class="opt-first">이용약관</li>
+                        <li class="opt-second">개인정보 처리방침</li>
+                        <li class="opt-third">청소년 보호 정책</li>
+                        <li class="opt-fourth">이메일 무단 수집 거부</li>
+                    </ul>
+                </dt>
+                <dd class="policy--contents">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                </dd>
+
             </dl>
         </div>
 
@@ -128,6 +138,13 @@
                 scrollTop: $("#chapterThird").position().top
             }, 300);
     })
+    $(".opt-fourth").click(function() {
+        $(this).parent("ul").removeClass("chapter-option-open").addClass("chapter-option");
+        $('html, body').animate({
+                scrollTop: $("#chapterFourth").position().top
+            }, 300);
+    })
+
 </script>
 </body>
 </html>
