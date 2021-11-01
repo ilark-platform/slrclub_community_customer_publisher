@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SLRclub</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=no">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/global.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <script src="../../js/jquery-3.4.1.min.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+    <div id="wrap">
+
+        <nav>
+            <ul class="fnb write_menu">
+                <li><a href="#">사진첨부</a></li>
+                <li><a href="#">동영상추가</a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#">텍스트속성</a></li>
+                <li><a href="#">글자정렬</a></li>
+            </ul>
+        </nav>
+        
+        <!--*****헤더영역******-->
+        <header id="header" class="trans">
+            <div class="hd__menu">
+                <h2 class="hd__title">
+                    글쓰기
+                </h2>
+                <div class="hd__btn">
+                    <div class="btn-close">
+                        <a href="#" class="js-close-modal"><span class="hidden-text">닫기</span></a>
+                    </div>
+                </div>
+                <div class="hd__btn">
+                    <div class="btn-info">
+                        <a href="#" class="editBtn"><span class="hidden-text">등록</span></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+      <!--*****본문영역******-->
+      <div id="contents" class="write_wrap">
+
+        <div class="container">
+            
+            <select class="custom-select mgt1">
+                <option selected>게시판을 선택해 주세요.</option>
+                <option>자유 게시판</option>
+            </select>
+            <select class="custom-select mgt1">
+                <option selected>type of article</option>
+                <option>정보/강좌</option>
+                <option>질문/답변</option>
+                <option>사진게시판</option>
+                <option>자유게시판</option>
+                <option>신제품정보</option>
+                <option>신목게시판</option>
+                <option>체험단</option>
+            </select>
+            <input type="text" placeholder="제목" class="mgt1">
+            <input type="text" placeholder="소제목" class="mgt1">
+            <textarea rows="8" class="mgt1">내용을 입력하세요.</textarea>
+
+            <div class="rep-img">
+                <a href="#" class="bedge disabled"><span class="ico-check"></span>대표이미지</a><!--대표이미지 비활성화시 disabled 추가-->
+                <a href="#" class="bedge right"><span class="ico-trash"></span>삭제</a>
+                <img src="../../images/dummy-photo01.jpg">
+            </div>
+            <button type="button" class="btn-primary mgt2">이미지 순서 변경</button>
+            <div class="grayTxt mgt1">※ 게시글은 slrclub.com에 함께 업로드 됩니다.</div>
+        </div>
+        
+       
+
+        <!--해시태그 입력시 태그노출-->
+        <nav>
+            <ul class="fnb type-write">
+                <div class="hd__search">
+                    <a class="chip-sort"><strong>일상/스냅</strong><button type="button" class="ico-close" onclick="this.parentElement.style.display='none'"></button></a>
+                    <a class="chip-sort"><strong>일상/스냅</strong><button type="button" class="ico-close" onclick="this.parentElement.style.display='none'"></button></a>
+                </div>
+            </ul>
+        </nav>
+    </div>
+</div>
+ 
+
+
+<script src="../../js/common.js" type="text/javascript"></script>
+
+</body>
+</html>

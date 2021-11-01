@@ -1,1 +1,3 @@
-<?xml version="1.0" ?><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs><title/><g id="chevron-top"><line class="cls-1" x1="16" x2="25" y1="11.5" y2="20.5"/><line class="cls-1" x1="7" x2="16" y1="20.5" y2="11.5"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="15.209" height="8.604" viewBox="0 0 15.209 8.604">
+  <path id="ico-arrow-down" d="M11.19,17.381,5,11.19,11.19,5" transform="translate(18.795 -4) rotate(90)" fill="none" stroke="#2e91e1" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+</svg>
