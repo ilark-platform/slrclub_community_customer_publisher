@@ -18,6 +18,9 @@
     <link rel="stylesheet" href="../../css/global.css">
     <link rel="stylesheet" href="../../css/main.css">
     <script src="../../js/jquery-3.4.1.min.js" type="text/javascript"></script>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -62,8 +65,45 @@
         <!--*****본문영역******-->
         <div id="contents">
             <div class="menu__wrap">
+                <div class="menu_favo">
+                    <h2 class="titTypeA container"><a class="btn js-click-modal">즐겨찾는 메뉴</a></h2>
+                    <!-- Swiper -->
+                    <div class="swiper favo_slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="fovo_slide-photo"><img src="https://swiperjs.com/demos/images/nature-5.jpg" /><span>커뮤니티</span></div>
+                                <h2>자유게시판</h2>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="fovo_slide-photo"><img src="https://swiperjs.com/demos/images/nature-7.jpg" /><span>포럼</span></div>
+                                <h2>악세서리</h2>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="fovo_slide-photo"><img src="https://swiperjs.com/demos/images/nature-1.jpg" /><span>인포메이션</span></div>
+                                <h2>SLR리뷰</h2>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="fovo_slide-photo"><img src="https://swiperjs.com/demos/images/nature-2.jpg" /><span>커뮤니티</span></div>
+                                <h2>자유게시판</h2>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="fovo_slide-photo"><img src="https://swiperjs.com/demos/images/nature-3.jpg" /><span>커뮤니티</span></div>
+                                <h2>악세서리</h2>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="fovo_slide-photo"><img src="https://swiperjs.com/demos/images/nature-4.jpg" /><span>커뮤니티</span></div>
+                                <h2>SLR리뷰</h2>
+                            </div>
+                            <!-- 마지막 칸에 메뉴 추가 영역-->
+                            <div class="swiper-slide">
+                                <div class="fovo_slide-photo"><a href="#" class="favo_add"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // Swiper -->
+                </div>
+
                 <div class="container">
-                    <h2 class="titTypeA"><a class="btn js-click-modal">즐겨찾는 메뉴</a></h2>
                     <!--메뉴리스트-->
                     <div class="menu__box">
                         <h2 class="titTypeA">커뮤니티</h2>
@@ -142,16 +182,31 @@
                 
             </div>
             <div id="TopBtn">
-				<button class="btn-totop" onclick="topFunction()" style="bottom:55px"></button>
+				<button class="btn-write" onclick="topFunction()"></button>
 				<button class="btn-totop" onclick="topFunction()"></button>
 			</div>
-        
         </div>
     </div>
  
 
 
 <script src="../../js/common.js" type="text/javascript"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".favo_slide", {
+        slidesPerView: 3.5,
+        //centeredSlides: true,
+        spaceBetween: 12,
+        grabCursor: true,
+        pagination: {
+          //el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
 
 </body>
 </html>

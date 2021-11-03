@@ -23,6 +23,7 @@
 .red{color: var(--red)!important;}
 .grayTxt{color: var(--grayText)!important;}
 .bgGray{background: var(--line)!important;}
+.fCol{color: var(--primary) !important;}
 
 .w10{width:10%!important}
 .w20{width:20%!important}
@@ -101,6 +102,7 @@ h3{font-size: 1em;}
 button:hover{opacity: .8;}
 
 .line_box{border: 1px solid var(--lightline);border-radius: 4px;background: #fff;padding:10px 16px 10px 16px;}
+.bg_box{border-radius: 4px;background: var(--line);padding:10px 16px 10px 16px;margin:4px 0}
 .btn_fixed {position: fixed;bottom: 10px;left: 5%;width: 90%!important;}
 
 a {text-decoration: none;color: inherit;}
@@ -351,6 +353,9 @@ input[type=checkbox].ic-psw:checked+label {background: url(../images/ico-eye-clo
 .bedge>span[class*=ico-] {vertical-align: middle;display: inline-block;width:20px;height: 20px;background-size: 14px;}
 .bedge.right{right: 10px;left:unset;}
 .list__content .bedge{position: relative;left:unset;top:unset;width:max-content}
+.type-write .list__tab__wrap{margin:unset;border:0}
+.chip-slide {width: max-content;}
+.chip-slide>li {float: left;display: inline-block;padding: 0 2px;}
 
 /**알림**/
 .alert_wrap{margin:10px auto;}
@@ -372,6 +377,23 @@ input[type=checkbox].ic-psw:checked+label {background: url(../images/ico-eye-clo
 .push-btn>a{font-size: 16px; padding:6px 20px 4px 0;display: inline-block;}
 .push_card .list__type--line.dark-mode{background-color: #000;color:#fff}
 .push_card .dark-mode .list__content>h4{color:rgba(255, 255, 255, 0.6)}
+
+/** 이용약관 **/
+.terms_wrap .container{padding: 60px 0 40px;}
+.terms_wrap .list__tab__wrap{position: fixed;margin: 0 0 20px;}
+.terms_wrap h2{font-size:18px;font-weight: bold;line-height: 26px;margin: 15px auto;}
+.terms_wrap h3{font-size:15px;font-weight: bold;}
+.terms_wrap .con{font-size:13px;line-height: 18px;margin:10px auto 30px}
+.terms_wrap ol li{list-style-type:decimal;margin:6px 0 4px 14px;}
+.terms_wrap ol li>ol li{list-style-type:circle;margin-left: 10px;}
+
+.terms_tbl {overflow-x:scroll !important;width:100%;margin-top: 20px;}
+.terms_tbl table {width:550px;border-bottom:1px solid #999; border-spacing:0}
+.terms_tbl table thead th {padding:10px 0;border-top:2px solid #111111;border-bottom:1px solid #ddd;background:#f5f5f5;color:#3f3f3f;font-size:1.1em;}
+.terms_tbl table tbody th{color:#111; padding:8px;border-right:1px solid #ddd; border-bottom:1px solid #ddd;text-align:center;}
+.terms_tbl table tbody td {color:#555;padding:8px; border-right:1px solid #efefef; border-bottom:1px solid #ddd;text-align:center;}
+.terms_tbl table tbody td:last-child { border-right:0px;}
+
 
 .sub__notice{width:100%;background: var(--line);border-radius: 6px;}
 .sub__notice .notice__msg{color:#707070}
