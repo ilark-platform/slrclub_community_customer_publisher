@@ -12,12 +12,6 @@ nav > ul.fnb.write_menu li:first-child>a{background: url(../images/ico-photo.svg
 nav > ul.fnb.write_menu li:nth-child(2)>a{background: url(../images/ico-video.svg) center no-repeat;}
 nav > ul.fnb.write_menu li:nth-child(3)>a{background: #fff;}
 nav > ul.fnb.write_menu li:nth-child(4)>a{background: url(../images/ico-text.svg) center no-repeat;}
-nav > ul.fnb.write_menu li:nth-child(4)>a.underline{background: url(../images/ico-text-U.svg) center no-repeat;}
-nav > ul.fnb.write_menu li:nth-child(4)>a.list{background: url(../images/ico-text-list.svg) center no-repeat;}
-nav > ul.fnb.write_menu li:nth-child(4)>a.margin{background: url(../images/ico-text-margin.svg) center no-repeat;}
-nav > ul.fnb.write_menu li:nth-child(4)>a.link{background: url(../images/ico-text-link.svg) center no-repeat;}
-nav > ul.fnb.write_menu li:nth-child(4)>a.devide{background: url(../images/ico-text-devide.svg) center no-repeat;}
-nav > ul.fnb.write_menu li:nth-child(4)>a.bold{background: url(../images/ico-text-bold.svg) center no-repeat;}
 nav > ul.fnb.write_menu li:nth-child(5)>a{background: url(../images/ico-align-left.svg) center no-repeat;}
 nav > ul.fnb.write_menu li:nth-child(5)>a.center{background: url(../images/ico-align-center.svg) center no-repeat;}
 
@@ -54,6 +48,7 @@ nav > ul.type-write .btn-primary {width:20%; margin-left: 4px;}
 .search_wrap>.list__banner>img{padding-top:10px}
 .searchList{margin-top:14px;margin-bottom:10px;}
 .searchList .list__type--line>strong{font-weight: bold;width:16px;display: inline-block;}
+.result-no{text-align: center;padding:240px 0 60px;font-size: 16px; background: url(../images/illu-nodata.svg) center 40px no-repeat; background-size: 200px; }
 
 /** board list *********/
 .board__list{margin:0px 0px 0}
