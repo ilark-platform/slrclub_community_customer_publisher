@@ -175,7 +175,7 @@ li.current {border-bottom:3px solid var(--primary);color: #333;font-weight: bold
 .reply_box .accordion{background:var(--line);border-radius: 4px; padding:4px 10px;font-size: 12px;}
 .reply_box  button.accordion:after{float: unset;}
 .reply_box .panel{background: var(--line);border-radius: 6px;padding:0 14px;margin-top: -6px;}
-.reply_box .list__content>h4 .ico-reply{padding-right: 20px;width:20px;height: 20px; background-size:16px;}
+.reply_box .list__content .ico-reply{padding-right: 20px;width:20px;height: 20px; background-size:16px;}
 .reply_box .list__type--line{border-bottom:0}
 .reply_box .list__type--line>a{margin-top: 10px;}
 
