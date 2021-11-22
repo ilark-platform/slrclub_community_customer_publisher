@@ -233,7 +233,7 @@ input[type=checkbox].ic-psw:checked+label {background: url(../images/ico-eye-clo
 
 .login_wrap.signup{padding: 30px 24px 20px;}
 .signup_intro {text-align: center;background: url(../images/illu-welcome.svg) center no-repeat;background-size: 78%;width: 100%;height: 250px;margin: -20px auto 10px;}
-.overlap-confirm{position: absolute;right: 14px;top:10px;color: var(--primary);}
+.overlap-confirm{position: absolute;right: 8px;top:10px;color: var(--primary);padding: 0px 7px;background: #fff;}
 
 /** onboarding **/
 .onboard{height: 100vh;}
@@ -463,6 +463,16 @@ nav.write_loading > ul > li > a:before{content: ''!important;}
 .layer__content>dl>dd {color: #666;padding-top: 12px;width: 100%;}
 .layer__content .f-sub {color: #707070;}
 .dimmed {background: rgba(0, 0, 0, 0.5);width: 100%;height: 100%;position: absolute;top: 0;bottom: 0;left: 0;right: 0;z-index: 29;}
+button.close {width: 30px;height: 30px;background: url("../images/ico-close.svg") right top no-repeat;border: 0;text-indent: -9999px;}
+
+.img-enlarge{background: #000;position: relative;}
+.img-enlarge .layer__header{position: absolute;top:10px;width:100%;padding:10px 20px;color:var(--lightline);}
+.img-enlarge .layer__header .close{position: absolute;right: 0;top: 5px;right:16px;background: url("../images/ico-close-white.svg") right top no-repeat;}
+.img-enlarge .img-large {display: table-cell; vertical-align: middle;width:100%}
+.img-large img{width:100%;}
+.img-enlarge .img-large dl{width:100%;padding:20px 30px;position: absolute;top: 100px;background-color: rgba(0, 0, 0, 0.8);}
+.img-enlarge .img-large >dl>dt {width: 35%;padding: 8px 0;border-bottom: 1px solid #555;color: #fff;float: left;}
+.img-enlarge .img-large >dl>dd {width: 65%;padding: 8px 0;font-weight: bold;color: #fff;border-bottom: 1px solid #555;float: left;}
 
 .checkbox-list{max-height:280px; overflow: auto;}
 .checkbox-list li{padding:4px 0;display: flex;justify-content: space-between;align-items: center;}
