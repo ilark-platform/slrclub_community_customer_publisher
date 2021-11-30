@@ -56,7 +56,7 @@ nav > ul.type-write .btn-primary {width:20%; margin-left: 4px;}
 .list__type--line>a{display: flex;justify-content: space-between;align-items: center;}
 .list__type--line .list__content{width:75%;}
 .list__type--line .list__photo{width: 23%;}
-.list__type--line .list__photo>img{max-height: 70px;}
+.list__type--line .list__photo>img{height: 70px;object-fit: cover;}
 .list__photo>img{width: 100%;border-radius: var(--border-radius);}
 .list__content>h4{color:var(--grayText)}
 .list__content>h3{line-height: 24px;font-weight: bold;display: block;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
@@ -111,7 +111,7 @@ li.current {border-bottom:3px solid var(--primary);color: #333;font-weight: bold
 .contentList__wrap-gallery .category{position: relative;margin-right: 18px;}
 .gallery__list{margin-top:10px;display: flex;justify-content: flex-start;flex-flow: row wrap;}
 .gallery__list li{flex: 0 1 33.3%;padding:0px 2px}
-.gallery__list li img{width:100%;object-fit: cover;border-radius: 4px;}
+.gallery__list li img{width:100%;height:100px;object-fit: cover;border-radius: 4px;}
 .categoryBtn{position: absolute;right: 0px;top:0px;z-index: 2; border:1px solid #ddd;background:#fff url(../images/ico-arrow-down.svg) center no-repeat;border-radius: 4px; background-size: 12px;width:30px;height:28px;text-indent: -99999px;}
 #category-Layer {position: absolute; top: -4px;left: 12px;z-index: 1;width:98%;margin:auto; padding:10px 14px 10px; background:#fff;border:1px solid var(--lightline);border-radius: 4px;}
 #category-Layer dl{display: block;font-size: 12px;padding:3px 0}
